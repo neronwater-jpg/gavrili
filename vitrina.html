@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<title>Πώληση Περιουσίας – Dashboard</title>
+<style>
+  body { font-family: Arial; margin: 40px; background: #f7f7f7; }
+  header { padding: 20px 0; border-bottom: 2px solid #003399; margin-bottom: 30px; }
+  h1 { margin: 0; color: #003399; }
+  table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+  th, td { border: 1px solid #ccc; padding: 8px; }
+  th { background: #eee; }
+  summary { cursor: pointer; font-size: 18px; margin: 10px 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Σκλαβάκης & Συνεργάτες</h1>
+  <p>Τεχνικές – Νομικές Υπηρεσίες • Διαχείριση Έργων</p>
+</header>
+
+<h2>Πώληση Περιουσίας</h2>
+
+<h3>Αναλυτική Σελίδα</h3>
+<p>
+  <a href="/docs/prosymfono.pdf" target="_blank">
+    Σχέδιο Προσυμφώνου – Αναλυτική Περιγραφή
+  </a>
+</p>
+
+<h3>Δικαιολογητικά</h3>
+<table>
+  <tr><th>Α/Α</th><th>Περιγραφή</th><th>Σύνδεσμος</th></tr>
+  <tr><td>1</td><td>Γονική Παροχή 2269/2009</td><td><a href="/docs/2269.pdf">Άνοιγμα</a></td></tr>
+  <!-- Προσθέτεις νέα γραμμή όποτε υπάρχει νέο στοιχείο -->
+</table>
+
+<h3>Ενημερώσεις</h3>
+<table>
+  <tr>
+    <th>Ημερομηνία</th>
+    <th>Ενημέρωση</th>
+    <th>To‑Do</th>
+    <th>Υπεύθυνος</th>
+  </tr>
+
+  <tr>
+    <td>12/09/2026</td>
+    <td>Κατατέθηκαν αντιρρήσεις.</td>
+    <td>Αναμονή απάντησης.</td>
+    <td>Μ. Σκλαβάκης</td>
+  </tr>
+
+  <tr>
+    <td>13/09/2026</td>
+    <td>Ελήφθη απάντηση από Funds.</td>
+    <td>Ενημέρωση συμβολαιογράφου.</td>
+    <td>Μ. Σκλαβάκης</td>
+  </tr>
+</table>
+
+<details>
+  <summary>Χρήσιμα Τηλέφωνα</summary>
+  <table>
+    <tr>
+      <th>Ονοματεπώνυμο / Υπηρεσία</th>
+      <th>Ιδιότητα</th>
+      <th>Τηλέφωνο</th>
+      <th>Email</th>
+    </tr>
+
+    <tr>
+      <td>Μάνος Κασσωτάκης</td>
+      <td>Τοπογράφος Πωλήτριας</td>
+      <td><a href="#" onclick="copyToClipboard('69ΧΧΧΧΧΧΧ')">69ΧΧΧΧΧΧΧ</a></td>
+      <td>michael@example.com</td>
+    </tr>
+    
+    <tr>
+      <td>Γιάννης Φραγκάκης</td>
+      <td>Τοπογράφος Αγοραστή</td>
+      <td><a href="#" onclick="copyToClipboard('69ΧΧΧΧΧΧΧ')">69ΧΧΧΧΧΧΧ</a></td>
+      <td>michael@example.com</td>
+    </tr>
+
+    <tr>
+      <td>Μιχαήλ Γαϊτανάκης</td>
+      <td>Λογιστής</td>
+      <td><a href="#" onclick="copyToClipboard('69ΧΧΧΧΧΧΧ')">69ΧΧΧΧΧΧΧ</a></td>
+      <td>michael@example.com</td>
+    </tr>
+
+    <tr>
+      <td>Συμβολαιογράφος</td>
+      <td>Νομική Υποστήριξη</td>
+      <td><a href="#" onclick="copyToClipboard('69ΧΧΧΧΧΧΧ')">69ΧΧΧΧΧΧΧ</a></td>
+      <td>notary@example.com</td>
+    </tr>
+
+    <tr>
+      <td>Δασαρχείο</td>
+      <td>Αντιρρήσεις Δασικού Χαρακτήρα</td>
+      <td><a href="#" onclick="copyToClipboard('69ΧΧΧΧΧΧΧ')">69ΧΧΧΧΧΧΧ</a></td>
+      <td>info@dasarxeio.gr</td>
+    </tr>
+  </table>
+</details>
+
+</h3>
+
+
+<script>
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(() => {
+    alert("Το τηλέφωνο αντιγράφηκε: " + text);
+  });
+}
+</script>
+
+</body>
+</html>
